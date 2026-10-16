@@ -16,3 +16,6 @@
     Curiosidades:
     - Cada branch é um novo diretório. (Pasta oculta para o windows);
     - Mesmo cada commit sendo uma nova pasta, o repositório (a pasta principal) rastrea todos os brenchs e suas alterações.
+
+    Comandos:
+    - "git fetch": Confere se o repositório tem atualizações na nuvem. E atualiza automaticamente. (Use o comando no terminal)
