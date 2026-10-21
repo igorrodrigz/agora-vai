@@ -1,6 +1,6 @@
 A ideia é transformar cada classe Java em um roteiro em português, descrevendo o que ela precisa fazer. Assim, vocês podem reconstruir o código por conta própria, sem depender de copiar o projeto pronto.
 
-Vamos manter as cinco classes do projeto: `Main`, `Menu`, `Voluntario`, `Cadastro` e `ArquivoCSV`.
+Vamos manter as cinco classes do projeto: `Main`, `Menu`, `Voluntario`, `Cadastro`, `Editar`, `Excluir` e `ArquivoCSV`.
 
 # 1. Classe `Voluntario`
 
@@ -12,7 +12,7 @@ Objetivo: representar um voluntário e guardar suas informações.
 
 1. Criar uma classe chamada `Voluntario`.
 2. Declarar os atributos que representam os dados de um voluntário:
-   - Identificador numérico.
+   - **Identificador numérico.
    - Nome completo.
    - CPF.
    - Município.
@@ -37,18 +37,18 @@ Objetivo: mostrar as opções disponíveis e receber a escolha do usuário.
 ## Classe Menu — Roteiro em português
 
 1. Criar uma classe chamada `Menu`.
-2. Criar um método responsável por exibir as opções do sistema:
+2. Criar um método responsável por exibir as opções do sistema: OKEI
    - Cadastrar voluntário.
    - Listar voluntários.
    - Consultar voluntário.
    - Editar voluntário.
    - Excluir voluntário.
-   - Salvar os dados.
+   - **Salvar os dados. - Será um atributo e não opção do menu, utilizado em "excluir", "editar" e "cadastrar".
    - Sair do sistema.
-3. Exibir as opções no terminal.
-4. Solicitar que o usuário digite o número da opção desejada.
-5. Ler a opção digitada.
-6. Devolver essa opção para a classe principal decidir o que fazer.
+3. Exibir as opções no terminal. OK
+4. Solicitar que o usuário digite o número da opção desejada. OK
+5. Ler a opção digitada. OK
+6. Devolver essa opção para a classe principal decidir o que fazer. PRECISA DO CADASTRO.
 
 O que vocês precisam entender: o menu apresenta as opções, mas não precisa executar todas as operações diretamente. Ele recebe a escolha e deixa a classe principal encaminhar a operação.
 
@@ -61,7 +61,7 @@ Objetivo: controlar o cadastro e as operações com os voluntários.
 ## Classe Cadastro — Roteiro em português
 
 1. Criar uma classe chamada `Cadastro`.
-2. Criar um vetor capaz de armazenar até 100 objetos do tipo Voluntario.
+2. Criar um vetor capaz de armazenar até 10 objetos do tipo Voluntario. (10 inicialmente.)
 3. Criar uma variável para controlar quantos voluntários estão cadastrados.
 4. Criar um método para cadastrar voluntários:
    - Verificar se ainda existe espaço no vetor.
