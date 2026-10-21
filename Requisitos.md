@@ -47,7 +47,7 @@ Organizar os dados dos voluntários em um cadastro que facilite encontrar seus c
 * Editar ou excluir exigirá um cadastro existente.  
 * A exclusão precisará de confirmação.  
 * Se o arquivo ainda não existir, o sistema iniciará com a lista vazia.  
-* Os dados deverão continuar disponíveis após fechar e abrir o programa.  
+* Os dados deverão continuar disponíveis após fechar e abrir o programa.   
 * Campos com separadores, aspas ou quebras de linha deverão ser tratados corretamente no CSV.
 
 **Limites da primeira versão**
