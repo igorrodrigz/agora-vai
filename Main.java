@@ -1,6 +1,9 @@
 public class Main {
 	public static void main(String[] args) {
 		// Código principal
-        System.out.println("¡Hola, mundo!");
+		// Cria um objeto da Classe Menu.
+        Menu menu = new Menu();
+		// Chama o método chama_menu() da classe Menu.
+        menu.chama_menu();
 	}
 }
