@@ -19,22 +19,22 @@ public class Menu {
 
             switch (opcao) {
                 case 1:
-                    System.out.println ("test 1");
+                    System.out.println ("Você selecionou a opção 1: Cadastrar Voluntários");
                     break;
                 case 2:
-                    System.out.println ("test 2");
+                    System.out.println ("Você selecionou a opção 2: Listar voluntários");
                     break;
                 case 3:
-                    System.out.println ("test 3");
+                    System.out.println ("Você selecionou a opção 3: Consultar voluntário");
                     break;
                 case 4:
-                    System.out.println ("test 4");
+                    System.out.println ("Você selecionou a opção 4: Editar voluntário");
                     break;
                 case 5:
-                    System.out.println ("test 5");
+                    System.out.println ("Você selecionou a opção 5: Excluir voluntário");
                     break;
                 case 6:
-                    System.out.println ("Saindo do sistema...");
+                    System.out.println ("Você selecionou a opção 6: Sair do sistema");
                     break;
                 default:
                     System.out.println("Opção inválida. Por favor, digite um número válido.");
