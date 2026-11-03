@@ -1,42 +1,54 @@
 import java.util.Scanner;
+
 public class Menu {
-    public void chama_menu(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Menu Principal");
-        System.out.println("Digite um número para selecionar uma opção:");
-        System.out.println("[1] Cadastrar Voluntários.");
-        System.out.println("[2] Listar voluntários.");
-        System.out.println("[3] Consultar voluntário");
-        System.out.println("[4] Editar voluntário.");
-        System.out.println("[5] Excluir voluntário.");
-        System.out.println("[6] Sair do sistema.");
+    public void executar(Scanner teclado) {
+        String opcao = "";
 
-        int opcao = scanner.nextInt();
-        if (opcao == 1) {
-            System.out.println("Você selecionou a opção 1: Cadastrar Voluntários");
-            // Lógica para cadastrar voluntários
-        } else if (opcao == 2) {
-            System.out.println("Você selecionou a opção 2: Listar voluntários");
-            // Lógica para a opção 2
-        } else if (opcao == 3) {
-            System.out.println("Você selecionou a opção 3: Consultar voluntário");
-            // Lógica para a opção 3
-        } else if (opcao == 4) {
-            System.out.println("Você selecionou a opção 4: Editar voluntário");
-            // Lógica para a opção 4
-        } else if (opcao == 5) {
-            System.out.println("Você selecionou a opção 5: Excluir voluntário");
-            // Lógica para a opção 5
-        } else if (opcao == 6) {
-            System.out.println("Você selecionou a opção 6: Sair do sistema");
-            System.exit(0);
-            // Lógica para a opção 6
-        } else {
-            System.out.println("Opção inválida. Por favor, selecione uma opção válida.");
+        while (!opcao.equals("0")) {
+            System.out.println("\n=== SISTEMA DE VOLUNTÁRIOS ===");
+            System.out.println("1 - Cadastrar voluntário");
+            System.out.println("2 - Listar todos os voluntários");
+            System.out.println("3 - Consultar voluntário por ID");
+            System.out.println("4 - Editar voluntário");
+            System.out.println("5 - Excluir voluntário");
+            System.out.println("0 - Sair");
+            System.out.print("Escolha uma opção: ");
+
+            opcao = teclado.nextLine();
+
+            switch (opcao) {
+                case "1":
+                    Cadastrar cadastrar = new Cadastrar();
+                    cadastrar.executar(teclado);
+                    break;
+
+                case "2":
+                    Consultar consultaLista = new Consultar();
+                    consultaLista.listarTodos();
+                    break;
+
+                case "3":
+                    Consultar consultar = new Consultar();
+                    consultar.executar(teclado);
+                    break;
+
+                case "4":
+                    Editar editar = new Editar();
+                    editar.executar(teclado);
+                    break;
+
+                case "5":
+                    Excluir excluir = new Excluir();
+                    excluir.executar(teclado);
+                    break;
+
+                case "0":
+                    System.out.println("Programa encerrado.");
+                    break;
+
+                default:
+                    System.out.println("Opção inválida. Tente novamente.");
+            }
         }
-
-         scanner.close();
     }
-
 }
-// main = new classe que vc quer();

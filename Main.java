@@ -1,9 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
-	public static void main(String[] args) {
-		// Código principal
-		// Cria um objeto da Classe Menu.
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
         Menu menu = new Menu();
-		// Chama o método chama_menu() da classe Menu.
-        menu.chama_menu();
-	}
+        menu.executar(teclado);
+
+        teclado.close();
+    }
 }

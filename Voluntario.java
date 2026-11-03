@@ -1,5 +1,4 @@
 public class Voluntario {
-
     private int id;
     private String nome;
     private String cpf;
@@ -10,9 +9,8 @@ public class Voluntario {
     private String disponibilidade;
 
     public Voluntario(int id, String nome, String cpf, String municipio,
-            String formacao, String telefone, String email,
-            String disponibilidade) {
-
+                      String formacao, String telefone, String email,
+                      String disponibilidade) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
@@ -31,52 +29,52 @@ public class Voluntario {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public String getCpf() {
         return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
 
     public String getMunicipio() {
         return municipio;
     }
 
-    public void setMunicipio(String municipio) {
-        this.municipio = municipio;
-    }
-
     public String getFormacao() {
         return formacao;
-    }
-
-    public void setFormacao(String formacao) {
-        this.formacao = formacao;
     }
 
     public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
     public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getDisponibilidade() {
         return disponibilidade;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public void setMunicipio(String municipio) {
+        this.municipio = municipio;
+    }
+
+    public void setFormacao(String formacao) {
+        this.formacao = formacao;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public void setDisponibilidade(String disponibilidade) {
