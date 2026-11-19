@@ -20,3 +20,4 @@
     Comandos:
     - "git fetch": Confere se o repositório tem atualizações na nuvem. E atualiza automaticamente. (Use o comando no terminal);
     - "git pull": Puxa a versão atualizada da núvem. Similar ao botão "sincronizar".
+    
